@@ -3,8 +3,8 @@ import check_email from "./check_email";
 
 function setCustomFormValidation() {
     const flexForm = document.querySelector(".flexForm");
-    const nomeText = document.getElementById("nomeText"); // Aggiungi questa riga
-    const emailText = document.getElementById("emailText"); // Aggiungi questa riga
+    const nomeText = document.getElementById("nomeText");
+    const emailText = document.getElementById("emailText");
 
     // Crea elementi per i messaggi di errore
     const nomeError = document.createElement("div");
@@ -53,7 +53,7 @@ function setCustomFormValidation() {
         }
     });
 
-    // Aggiungi validazione al submit del form
+    // Aggiunge validazione al submit del form
     flexForm.addEventListener('submit', (e) => {
         const objectData = {
             username: nomeText.value,

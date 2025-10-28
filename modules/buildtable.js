@@ -3,7 +3,7 @@ import manageMouseDown from "./managemouse";
 const buildTable = (data) => {
     let container = document.querySelector("#container");
     
-    // Pulisci il container prima di creare una nuova tabella
+    // Pulisce il container prima di creare una nuova tabella
     container.innerHTML = "";
     
     let table = document.createElement('table');

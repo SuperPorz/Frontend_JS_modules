@@ -21,7 +21,7 @@ const buildBanner = (data, bannersCounter) => {
   const banner = document.createElement("section");
   banner.className = "rowSection aqua";
 
-  // Usa DOMPurify correttamente per l'immagine
+  // Usa DOMPurify per l'immagine
   const img = document.createElement("img");
   img.src = DOMPurify.sanitize(bannerCompany.imageSrc);
   img.alt = DOMPurify.sanitize(bannerCompany.imageAlt);
